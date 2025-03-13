@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize().statusBarsPadding(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TopcGrid(
+                    TopicGrid(
                         modifier = Modifier.padding(
                             start = dimensionResource(R.dimen.padding_small),
                             top = dimensionResource(R.dimen.padding_small),
@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun TopcGrid(modifier: Modifier = Modifier) {
+fun TopicGrid(modifier: Modifier = Modifier) {
 
     LazyVerticalGrid(
         columns = GridCells.Fixed(2),
